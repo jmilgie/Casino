@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Sports Betting Referrals</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #0a0a0a;
+        color: #ffffff;
+        min-height: 100vh;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    /* Animated background */
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: 
+            radial-gradient(circle at 20% 50%, rgba(0, 255, 127, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 80% 50%, rgba(0, 255, 127, 0.05) 0%, transparent 50%),
+            radial-gradient(circle at 50% 100%, rgba(0, 255, 127, 0.08) 0%, transparent 50%);
+        animation: breathe 10s ease-in-out infinite;
+        z-index: -1;
+    }
+
+    @keyframes breathe {
+        0%, 100% { opacity: 0.8; }
+        50% { opacity: 1; }
+    }
+
+    .header {
+        text-align: center;
+        padding: 3rem 1rem 2rem;
+        background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+    }
+
+    .header h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        background: linear-gradient(135deg, #00ff7f 0%, #00cc63 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 30px rgba(0, 255, 127, 0.5);
+        margin-bottom: 1rem;
+        animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+        from { filter: brightness(1); }
+        to { filter: brightness(1.2); }
+    }
+
+    .subtitle {
+        color: #a0a0a0;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .container {
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .cards-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .card {
+        background: linear-gradient(145deg, #1a1a1a 0%, #0d0d0d 100%);
+        border-radius: 20px;
+        border: 1px solid rgba(0, 255, 127, 0.2);
+        padding: 2.5rem 3rem;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        .card {
+            padding: 1.5rem;
+        }
+    }
+
+    .card::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(45deg, #00ff7f, #00cc63, #00ff7f);
+        border-radius: 20px;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 0.3s ease;
+        animation: rotate 4s linear infinite;
+    }
+
+    @keyframes rotate {
+        100% { transform: rotate(360deg); }
+    }
+
+    .card:hover::before {
+        opacity: 0.4;
+    }
+
+    .card:hover {
+        transform: translateY(-8px) scale(1.01);
+        box-shadow: 0 25px 70px rgba(0, 255, 127, 0.25);
+    }
+
+    .card-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        .card-content {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .card-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        gap: 1rem;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.5rem;
+        background: linear-gradient(135deg, rgba(0, 255, 127, 0.2), rgba(0, 255, 127, 0.1));
+        border: 2px solid rgba(0, 255, 127, 0.3);
+    }
+
+    .card-title {
+        flex: 1;
+    }
+
+    .card-title h2 {
+        font-size: 1.5rem;
+        color: #00ff7f;
+        margin-bottom: 0.25rem;
+    }
+
+    .card-title .type {
+        color: #808080;
+        font-size: 0.9rem;
+    }
+
+    .input-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .input-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #a0a0a0;
+        font-size: 0.9rem;
+    }
+
+    .link-display {
+        margin: 1rem 0;
+        padding: 1rem;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        border: 1px solid rgba(0, 255, 127, 0.1);
+        word-break: break-all;
+        font-family: 'Courier New', monospace;
+        font-size: 0.85rem;
+        color: #00ff7f;
+        min-height: 3rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .button-group {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn {
+        flex: 1;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-copy {
+        background: linear-gradient(135deg, #00ff7f 0%, #00cc63 100%);
+        color: #000;
+    }
+
+    .btn-copy:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 20px rgba(0, 255, 127, 0.4);
+    }
+
+    .btn-open {
+        background: transparent;
+        border: 2px solid #00ff7f;
+        color: #00ff7f;
+    }
+
+    .btn-open:hover {
+        background: rgba(0, 255, 127, 0.1);
+        transform: scale(1.05);
+    }
+
+    .btn::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        transform: translate(-50%, -50%);
+        transition: width 0.6s, height 0.6s;
+    }
+
+    .btn:active::after {
+        width: 300px;
+        height: 300px;
+    }
+
+    .instructions-content {
+        padding: 1rem;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        border: 1px solid rgba(0, 255, 127, 0.1);
+        color: #e0e0e0;
+        line-height: 1.6;
+    }
+
+    .benefits-box {
+        background: linear-gradient(135deg, rgba(0, 255, 127, 0.05), rgba(0, 255, 127, 0.02));
+        border: 1px solid rgba(0, 255, 127, 0.2);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-top: 1rem;
+        height: fit-content;
+    }
+
+    .benefits-box h3 {
+        color: #00ff7f;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .benefits-content {
+        padding: 0.5rem 0;
+    }
+
+    .benefits-content p {
+        margin: 0.5rem 0;
+        color: #e0e0e0;
+        padding-left: 1rem;
+        position: relative;
+    }
+
+    .benefits-content p::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: #00ff7f;
+    }
+
+    .toast {
+        position: fixed;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%) translateY(100px);
+        background: linear-gradient(135deg, #00ff7f 0%, #00cc63 100%);
+        color: #000;
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        font-weight: 600;
+        opacity: 0;
+        transition: all 0.3s ease;
+        z-index: 1000;
+    }
+
+    .toast.show {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+
+    /* Floating casino chips animation */
+    .chip {
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        background: radial-gradient(circle, #00ff7f 0%, #00cc63 100%);
+        border-radius: 50%;
+        opacity: 0.1;
+        animation: float 20s infinite linear;
+        z-index: -1;
+    }
+
+    @keyframes float {
+        0% { transform: translateY(100vh) rotate(0deg); }
+        100% { transform: translateY(-100px) rotate(360deg); }
+    }
+
+    .footer {
+        text-align: center;
+        padding: 2rem;
+        color: #606060;
+        border-top: 1px solid rgba(0, 255, 127, 0.1);
+        margin-top: 3rem;
+    }
+</style>
+
+</head>
+<body>
+    <!-- Floating chips for ambiance -->
+    <div class="chip" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="chip" style="left: 30%; animation-delay: 5s;"></div>
+    <div class="chip" style="left: 50%; animation-delay: 10s;"></div>
+    <div class="chip" style="left: 70%; animation-delay: 15s;"></div>
+    <div class="chip" style="left: 90%; animation-delay: 20s;"></div>
+<div class="header">
+    <h1>🎰 Premium Betting Referrals 🎰</h1>
+    <p class="subtitle">Exclusive Signup Bonuses & Premium Rewards</p>
+</div>
+
+<div class="container">
+    <div class="cards-grid">
+        <!-- DraftKings Casino -->
+        <div class="card">
+            <div class="card-header">
+                <div class="logo">DK</div>
+                <div class="card-title">
+                    <h2>DraftKings</h2>
+                    <div class="type">Casino</div>
+                </div>
+            </div>
+            
+            <div class="card-content">
+                <div class="card-left">
+                    <div class="input-group">
+                        <label>Referral Link</label>
+                        <div class="link-display" id="dk-display" data-link="https://draftkings.com/refer/temp123">https://draftkings.com/refer/temp123</div>
+                    </div>
+                    
+                    <div class="button-group">
+                        <button class="btn btn-copy" onclick="copyLink('dk')">
+                            📋 Copy Link
+                        </button>
+                        <button class="btn btn-open" onclick="openLink('dk')">
+                            🔗 Open Link
+                        </button>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Signup Instructions</label>
+                        <div class="instructions-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Click the referral link above and create your account. Make sure to enter the promo code during registration. Deposit funds using any major payment method and place your first bet to unlock all bonuses.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-right">
+                    <div class="benefits-box" style="margin-top: 0;">
+                        <h3>🎁 Benefits You Receive</h3>
+                        <div class="benefits-content">
+                            <!-- Add your benefits here -->
+                            <p>$100 deposit match</p>
+                            <p>$50 in casino credits</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefits-box" style="margin-top: 1rem;">
+                        <h3>💰 Benefits I Receive</h3>
+                        <div class="benefits-content">
+                            <!-- Add referrer benefits here -->
+                            <p>$100 casino credit</p>
+                            <p>VIP rewards points</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BetMGM Sports -->
+        <div class="card">
+            <div class="card-header">
+                <div class="logo">BM</div>
+                <div class="card-title">
+                    <h2>BetMGM</h2>
+                    <div class="type">Sports</div>
+                </div>
+            </div>
+            
+            <div class="card-content">
+                <div class="card-left">
+                    <div class="input-group">
+                        <label>Referral Link</label>
+                        <div class="link-display" id="bm-display" data-link="https://betmgm.com/refer/temp456">https://betmgm.com/refer/temp456</div>
+                    </div>
+                    
+                    <div class="button-group">
+                        <button class="btn btn-copy" onclick="copyLink('bm')">
+                            📋 Copy Link
+                        </button>
+                        <button class="btn btn-open" onclick="openLink('bm')">
+                            🔗 Open Link
+                        </button>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Signup Instructions</label>
+                        <div class="instructions-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Follow the referral link to access the exclusive BetMGM offer. Complete the registration process with your personal details. Verify your identity as required by state regulations. Your bonus will be automatically applied after your first qualifying wager.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-right">
+                    <div class="benefits-box" style="margin-top: 0;">
+                        <h3>🎁 Benefits You Receive</h3>
+                        <div class="benefits-content">
+                            <!-- Add your benefits here -->
+                            <p>$1,500 first bet protection</p>
+                            <p>$500 deposit match</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefits-box" style="margin-top: 1rem;">
+                        <h3>💰 Benefits I Receive</h3>
+                        <div class="benefits-content">
+                            <!-- Add referrer benefits here -->
+                            <p>$100 sportsbook bonus</p>
+                            <p>MGM Rewards tier credits</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FanDuel Sportsbook -->
+        <div class="card">
+            <div class="card-header">
+                <div class="logo">FD</div>
+                <div class="card-title">
+                    <h2>FanDuel</h2>
+                    <div class="type">Sportsbook</div>
+                </div>
+            </div>
+            
+            <div class="card-content">
+                <div class="card-left">
+                    <div class="input-group">
+                        <label>Referral Link</label>
+                        <div class="link-display" id="fd-display" data-link="https://fanduel.com/refer/temp789">https://fanduel.com/refer/temp789</div>
+                    </div>
+                    
+                    <div class="button-group">
+                        <button class="btn btn-copy" onclick="copyLink('fd')">
+                            📋 Copy Link
+                        </button>
+                        <button class="btn btn-open" onclick="openLink('fd')">
+                            🔗 Open Link
+                        </button>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Signup Instructions</label>
+                        <div class="instructions-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse. Use my referral link to get started with FanDuel. Create your account and complete the verification process. Make your first deposit of at least $10. Place your first bet to receive your bonus bets instantly. Remember to check your email for additional promotional offers.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-right">
+                    <div class="benefits-box" style="margin-top: 0;">
+                        <h3>🎁 Benefits You Receive</h3>
+                        <div class="benefits-content">
+                            <!-- Add your benefits here -->
+                            <p>$200 in bonus bets after first $5 bet</p>
+                            <p>3 months of NBA League Pass</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefits-box" style="margin-top: 1rem;">
+                        <h3>💰 Benefits I Receive</h3>
+                        <div class="benefits-content">
+                            <!-- Add referrer benefits here -->
+                            <p>$50 bonus credit</p>
+                            <p>FanCash rewards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fanatics Sportsbook -->
+        <div class="card">
+            <div class="card-header">
+                <div class="logo">FN</div>
+                <div class="card-title">
+                    <h2>Fanatics</h2>
+                    <div class="type">Sportsbook</div>
+                </div>
+            </div>
+            
+            <div class="card-content">
+                <div class="card-left">
+                    <div class="input-group">
+                        <label>Referral Link</label>
+                        <div class="link-display" id="fn-display" data-link="https://fanatics.com/refer/temp101">https://fanatics.com/refer/temp101</div>
+                    </div>
+                    
+                    <div class="button-group">
+                        <button class="btn btn-copy" onclick="copyLink('fn')">
+                            📋 Copy Link
+                        </button>
+                        <button class="btn btn-open" onclick="openLink('fn')">
+                            🔗 Open Link
+                        </button>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Signup Instructions</label>
+                        <div class="instructions-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Click my exclusive Fanatics referral link above. Register with your email and create a secure password. Complete identity verification to comply with gaming regulations. Fund your account and start earning FanCash on every bet. Your bonus bets will be distributed over your first 10 days.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-right">
+                    <div class="benefits-box" style="margin-top: 0;">
+                        <h3>🎁 Benefits You Receive</h3>
+                        <div class="benefits-content">
+                            <!-- Add your benefits here -->
+                            <p>Up to $1000 in bonus bets over 10 days</p>
+                            <p>FanCash rewards on every bet</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefits-box" style="margin-top: 1rem;">
+                        <h3>💰 Benefits I Receive</h3>
+                        <div class="benefits-content">
+                            <!-- Add referrer benefits here -->
+                            <p>$100 FanCash</p>
+                            <p>Exclusive merchandise rewards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>🎲 Bet Responsibly | 21+ | Problem Gambling? Call 1-800-GAMBLER 🎲</p>
+    </div>
+</div>
+
+<!-- Toast notification -->
+<div class="toast" id="toast">Link copied to clipboard!</div>
+
+<script>
+
+    // Copy link function
+    function copyLink(id) {
+        const display = document.getElementById(id + '-display');
+        const link = display.getAttribute('data-link');
+        
+        if (!link) {
+            showToast('No link available!');
+            return;
+        }
+        
+        navigator.clipboard.writeText(link).then(() => {
+            showToast('Link copied to clipboard!');
+        }).catch(() => {
+            // Fallback for older browsers
+            const temp = document.createElement('input');
+            temp.value = link;
+            document.body.appendChild(temp);
+            temp.select();
+            document.execCommand('copy');
+            document.body.removeChild(temp);
+            showToast('Link copied to clipboard!');
+        });
+    }
+
+    // Open link function
+    function openLink(id) {
+        const display = document.getElementById(id + '-display');
+        const link = display.getAttribute('data-link');
+        
+        if (!link) {
+            showToast('No link available!');
+            return;
+        }
+        
+        // Ensure the link has a protocol
+        const url = link.startsWith('http') ? link : 'https://' + link;
+        window.open(url, '_blank');
+        showToast('Opening link in new tab...');
+    }
+
+    // Show toast notification
+    function showToast(message) {
+        const toast = document.getElementById('toast');
+        toast.textContent = message;
+        toast.classList.add('show');
+        
+        setTimeout(() => {
+            toast.classList.remove('show');
+        }, 3000);
+    }
+</script>
+</body>
+</html>
